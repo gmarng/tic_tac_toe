@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jogovelha
+Version: 0.1
+Summary: Um pacote de jogo da velha
+Author: Gabriel Henrique Marengoni
+Author-email: marengoni.gabriel@escola.pr.gov.br
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Jogo da Velha
+
+Este Ã© um simples jogo da velha implementado em Python como parte de um projeto de ProgramaÃ§Ã£o Orientada a Objetos.
+
+## DescriÃ§Ã£o
+
+O jogo da velha Ã© um jogo para dois jogadores que se revezam marcando os espaÃ§os em uma grade 3x3 com seus sÃ­mbolos (geralmente X e O). O jogador que conseguir colocar trÃªs de seus sÃ­mbolos em uma linha horizontal, vertical ou diagonal vence o jogo.
+
+## Funcionalidades
+
+- Jogo da velha para dois jogadores (humano vs humano ou humano vs computador)
+- ValidaÃ§Ã£o de jogadas
+- DetecÃ§Ã£o automÃ¡tica de vitÃ³ria ou empate

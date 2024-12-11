@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jogovelha/__init__.py
+jogovelha/jogo.py
+jogovelha.egg-info/PKG-INFO
+jogovelha.egg-info/SOURCES.txt
+jogovelha.egg-info/dependency_links.txt
+jogovelha.egg-info/top_level.txt
