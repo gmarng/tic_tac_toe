@@ -1,0 +1,48 @@
+ Relações das classes:
+ 
+ Tabuleiro
+   - Tipo: Classe independente
+   - Funcionamento: Representa o estado do tabuleiro no jogo
+
+ Jogador
+   - Tipo: Classe abstrata
+   - Funcionamento: Define a interface para todos os tipos de jogadores
+   - Relações:
+      Superclasse de JogadorHumano e JogadorComputador
+      Utilizada por JogoVelha para representar os participantes do jogo
+
+ JogadorHumano
+   - Tipo: Subclasse de Jogador
+   - Funcionamento: Implementa a lógica para jogadas feitas por um humano
+   - Relações:
+     Herda de Jogador
+     Utilizada por JogoVelha como um dos jogadores possíveis
+
+ JogadorComputador
+   - Tipo: Subclasse de Jogador
+   - Funcionamento: Implementa a lógica para jogadas feitas pelo computador
+   - Relações:
+      Herda de Jogador
+      Utilizada por JogoVelhaq como um dos jogadores possíveis
+
+ JogoVelha
+   - Tipo: Classe principal do jogo
+   - Funcionamento: Controla o fluxo do jogo e coordena as interações entre jogadores e tabuleiro
+   - Relações:
+      Contem uma instância de Tabuleiro
+      Contem duas inst~ancias de Jogador (podem ser JogadorHumano ou JogadorComputador)
+      Utiliza métodos de Tabuleiro para atualizar e verificar o estado do jogo
+      Chama métodos de Jogador para obter jogadas
+
+ Relações Principais:
+1. Composição: JogoVelha contém Tabuleiro e Jogadores
+2. Herança: JogadorHumano e JogadorComputador herdam de Jogador
+3. Dependência: Jogador depende de Tabuleiro para fazer jogadas
+4. Agregação: JogoVelha agrega instâncias de Jogador
+
+ Interação:
+1. JogoVelha inicia o jogo com um Tabuleiro e dois Jogadores
+2. JogoVelha solicita jogadas alternadamente aos Jogadores
+3. Jogadores interagem com o Tabuleiro através de JogoVelha
+4. JogoVelha verifica o estado do jogo após cada jogada usando o Tabuleiro
+5. O jogo continua até que JogoVelha determine um vencedor ou empate
